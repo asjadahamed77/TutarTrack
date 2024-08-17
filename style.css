@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+    scroll-padding: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Custom Scroll Bar*/
+html::-webkit-scrollbar{
+    width: 8px;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #98ABEE;
+    border-radius: 5rem;
+}
+section{
+    padding: 50px 100px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eeeff1;
+    padding: 15px 100px;
+}
+.navbar{
+    display: flex;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #201658;
+    font-weight: 500;
+}
+.navbar a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #98ABEE;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+.navbar a:hover:after{
+    width: 100%;
+}
+.header-btn a{
+    padding: 10px 20px;
+    color: #201658;
+    font-weight: 500;
+}
+.header-btn .sign-in{
+    background: #201658;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+.header-btn .sign-in:hover{
+    background: #98ABEE;
+}
+.menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    margin-top: 40px;
+    align-items: center;
+    
+    
+}
+
+.text-image{
+    display: flex;
+    gap: 30px;
+    margin: 35px 0 0 0 ;
+}
+.text h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.text{
+    margin: 60px 24px 0px;
+}
+.text span{
+    color: #98ABEE;
+}
+.text p{
+    margin: 0 8px 0 16px;
+}
+
+.search-courses{
+    width: 60%;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+
+.search-courses input{
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding: 6px;
+    color: #98ABEE;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif ;
+}
+
+.search-courses input:focus{
+    outline: none;
+}
+
+.about{
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    
+    
+    gap: 16px;
+    
+}
+.about .box{
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+    
+}
+.about .box p{
+    text-align: center;
+    
+     
+}
+.about img{
+    width: 120px;
+    height: 120px;
+    margin: 25px;
+}
+
+.course-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5px;
+    margin: 40px;
+}
+.course-details .box{
+    flex-basis: 23.5%;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+    margin: 10px 5px;
+    border-radius: 12px;
+    padding: 12px;
+    
+}
+
+.course-details .box img{
+    width: 100%;
+    height: 200px;
+}
+.course-details .box h3,img{
+    cursor: pointer;
+}
+.course-details .box h3,p{
+    text-align: left;
+    margin-left: 10px;
+}
+.course-details .box span{
+    color: red;
+}
+
+
+.reviews{
+    text-align: center;
+}
+.reviews-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    text-align: center;
+    margin: 20px 0;
+    gap: 20px;
+    
+}
+.heading{
+    text-align: center;
+}
+.reviews-container .box h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px 0 0 8px;
+}
+.rev-image{
+    width: 70px;
+    height: 70px;
+    
+}
+.rev-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #201658;
+}
+.reviews-container .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    
+}
+.reviews-container .box p{
+    font-style: italic;
+    margin-top: 10px;
+}
+.stars i{
+    color: #98ABEE;
+}
+.reviews-container h2{
+    color: #98ABEE;
+}
+.reviews-container p{
+    font-weight: 500;
+}
+.contact{
+    background: #201658;
+    color: #98ABEE;
+}
+.contact-container{
+    background: #201658;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.contact-container h1{
+    font-size: 42px;
+}
+.social-media{
+    align-items: center;  
+    
+}
+.contact-container .social-media i{
+    margin: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.contact-address{
+    display: flex;
+    flex-direction: column;
+}
+.header-details{
+    display: flex;
+    flex-direction: column;
+}
+.contact-container .contact-address{
+    gap: 10px;
+}
+.contact-container .contact-address a{
+    color: #98ABEE;
+}
+.contact-container .contact-address i{
+    color: #eeeff1;
+    margin-right: 15px;
+} 
+.contact-container .header-details{
+   
+    gap: 10px;
+}
+.contact-container .header-details a{
+    color: #98ABEE;
+}
+
+.register-container{
+    width: 330px;
+    height: 180px;
+    position: fixed;
+    top: 10%;
+    right:3%;
+    background: #98ABEE;
+    z-index: 1211125;
+    border-radius: 8px;
+    border: 2px solid #201658;
+    display: none;
+    
+}
+.sign-container{
+    width: 330px;
+    height: 180px;
+    position: fixed;
+    top: 10%;
+    right:3%;
+    background: #98ABEE;
+    z-index: 1211125;
+    border-radius: 8px;
+    border: 2px solid #201658;
+    display: none;
+    
+}
+
+.reg{
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+}
+.reg h3{
+    color: #201658;
+   
+}
+
+.reg button{
+    padding: 12px 18px;
+    color: #fff;
+    background: #201658;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 16px;
+    border: none;
+    font-weight: 500;
+    width: 80px;
+}
+.reg .cancel-popup-1 i{
+    position: absolute;
+    
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+    
+}   
+.sign{
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+}
+.sign h3{
+    color: #201658;
+   
+}
+
+.sign button{
+    padding: 12px 18px;
+    color: #fff;
+    background: #201658;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 16px;
+    border: none;
+    font-weight: 500;
+    width: 80px;
+}
+.sign .cancel-popup-2 i{
+    position: absolute;
+    
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+    
+}  
+
+
+
+@media (max-width:1217px){
+    .text-image{
+        display: grid;
+        text-align: center;
+    }
+    .course-details .box{
+        flex: 1 1 30%;
+    }
+}
+
+@media (max-width:1134px){
+    header{
+        padding: 11px 40px;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    
+    .text h1{
+        font-size: 30px;
+    }
+    .home{
+        display: block;
+        
+    }
+    
+    header .navbar{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+        transition: 0.2s ease;
+        text-align: left;
+    }
+    .navbar.active{
+        top: 100%;
+    }
+    .navbar a{
+        padding: 1rem;
+        border-left: 2px solid #98ABEE;
+        margin: 12px;
+        display: block;
+    }
+    .navbar a:hover{
+        color: #201658;
+        background: #98ABEE;
+        border: none;
+    }
+    .navbar a::after{
+        display: none;
+    }
+
+}
+@media (max-width:987px){
+   
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+        .contact{
+            text-align: center;
+            align-items: center;
+        }
+        .contact-container .social-media{
+            margin-bottom: 20px;
+        }
+        .contact-container .contact-address{
+            margin-bottom: 20px;
+        }
+        .search-courses{
+            width: 95%;
+        }
+
+
+}
+@media (max-width:825px){
+    .header-image img{
+        width: 400px;
+        height: 400px;
+    }
+    .course-details .box{
+        flex: 1 1 40%;
+    }
+}
+
+@media (max-width:697px){
+    .course-details .box{
+        flex: 1 1 55%;
+    }
+}

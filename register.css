@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+    scroll-padding: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #fff;
+    
+}
+
+
+.student-reg {
+    display: grid;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    
+}
+.tutor-reg {
+    display: grid;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    
+}
+.sign-in-page{
+    display: grid;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+   
+}
+.sign-in-tutor{
+    display: grid;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+}
+
+
+.student-reg .form-group{
+    display: grid;
+}
+.tutor-reg .form-group{
+    display: grid;
+}
+.sign-in-page .form-group{
+    display: grid;
+} 
+.sign-in-tutor .form-group{
+    display: grid;
+}
+.register {
+    padding: 20px;
+    background: #eeeff1;
+    border: 2px solid #98ABEE;
+    border-radius: 12px;
+}
+.student-signin{
+    padding: 40px;
+    background: #eeeff1;
+    border: 2px solid #98ABEE;
+    border-radius: 12px;
+}
+.tutor-sign-in{
+    padding: 40px;
+    background: #eeeff1;
+    border: 2px solid #98ABEE;
+    border-radius: 12px;
+}
+.register h2{
+    color: #201658;
+    font-weight: 600;
+    margin: 10px 20px 25px;
+}
+.student-signin h2{
+    
+        color: #201658;
+        font-weight: 600;
+        margin: 10px 20px 25px;
+    
+}
+.tutor-sign-in h2{
+    color: #201658;
+        font-weight: 600;
+        margin: 10px 20px 25px;
+}
+
+.form-group label{
+    font-weight: 500;
+    font-size: 16px;
+    color: #201658;
+    
+}
+.form-group{
+    margin-bottom: 12px;
+}
+.form-group input{
+    padding: 4px;
+    font-size: 15px;
+    color: #201658;
+    outline: none;
+    background: transparent;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    border-bottom: 2px solid #201658;
+}
+.register input{
+    width: 350px;
+}
+
+.tutor-sign-in input{
+    width: 350px;
+}
+
+.register .register-button{
+    margin-top: 32px;
+    text-align: center;
+}
+.student-signin .sign-in-button{
+    margin-top: 32px;
+    text-align: center;
+}
+.tutor-sign-in .sign-in-btn{
+    margin-top: 32px;
+    text-align: center;
+}
+.register .register-button button{
+    padding: 12px 24px;
+    border-radius: 12px;
+    width: 100%;
+    background: #1D24CA;
+    color: #eeeff1;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.tutor-sign-in .sign-in-btn button{
+    padding: 12px 24px;
+    border-radius: 12px;
+    width: 100%;
+    background: #1D24CA;
+    color: #eeeff1;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.student-signin .sign-in-button button{
+    padding: 12px 24px;
+    border-radius: 12px;
+    width: 100%;
+    background:#1D24CA;
+    color: #eeeff1;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.have-account{
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+hr{
+    margin: 24px;
+}
